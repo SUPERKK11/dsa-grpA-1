@@ -44,6 +44,23 @@ void inorderTraversal(Node* root) {
     cout << root->data << " ";
     inorderTraversal(root->right);
 }
+void preordertrversal(){
+    if(root==NULL){
+        return;
+    }
+    cout<<root->data<< "  ";
+    preordertraversal(root->left);
+    preordertraversal(root->right);
+}
+void postordertraversal(){
+if(root==NULL){
+        return;
+    }
+    cout<<root->data<< "  ";
+    postordertraversal(root->left);
+    postordertraversal(root->right);
+    
+}
 
 int main() {
     // Create the binary search tree by inserting values
